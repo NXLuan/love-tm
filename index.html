@@ -1,92 +1,91 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f3f3f3;
-            margin: 0;
-            overflow: hidden;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f3f3f3;
+        margin: 0;
+        overflow: hidden;
+      }
 
-        /* Style cho trái tim */
-        .heart {
-            position: relative;
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            transform: rotate(45deg);
-            animation: heartbeat 1.5s infinite ease-in-out;
-        }
+      /* Style cho trái tim */
+      .heart {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transform: rotate(45deg);
+        animation: heartbeat 1.5s infinite ease-in-out;
+      }
 
-        .heart::before,
-        .heart::after {
-            content: '';
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            border-radius: 50%;
-        }
+      .heart::before,
+      .heart::after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border-radius: 50%;
+      }
 
-        .heart::before {
-            left: 50px;
-            top: 0;
-        }
+      .heart::before {
+        left: 50px;
+        top: 0;
+      }
 
-        .heart::after {
-            top: -50px;
-            left: 0;
-        }
+      .heart::after {
+        top: -50px;
+        left: 0;
+      }
 
-        /* Hiệu ứng "heartbeat" cho trái tim */
-        @keyframes heartbeat {
-            0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.2);
-            }
-            100% {
-                transform: scale(1);
-            }
+      /* Hiệu ứng "heartbeat" cho trái tim */
+      @keyframes heartbeat {
+        0% {
+          transform: scale(1);
         }
-
-        /* Style cho chữ */
-        .text {
-            position: absolute;
-            color: black;
-            font-size: 36px;
-            font-weight: bold;
-            text-align: center;
-            opacity: 0;
-            animation: fadeIn 3s forwards;
-            animation-delay: 1.5s;
+        50% {
+          transform: scale(1.2);
         }
-
-        /* Hiệu ứng cho chữ */
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        100% {
+          transform: scale(1);
         }
-    </style>
-</head>
-<body>
+      }
 
+      /* Style cho chữ */
+      .text {
+        position: absolute;
+        color: black;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        opacity: 0;
+        animation: fadeIn 3s forwards;
+        animation-delay: 1.5s;
+      }
+
+      /* Hiệu ứng cho chữ */
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style> -->
+  </head>
+  <body>
     <div class="heart"></div>
-   <div class="text" id="text">MobiFone 5G</div>
+    <div class="text" id="text">Xuân Luân yêu Thảo My rất nhiều</div>
 
     <iframe
       src="http://localhost/chat/share?shared_id=e0c715e0f4c111ef8e330242ac180006&from=chat&auth=c5YjVjYjc0ZjRjMzExZWY5ZmI0MDI0Mm"
@@ -95,18 +94,17 @@
     >
     </iframe>
 
-    <script>
-        // Sử dụng JavaScript để thêm các hiệu ứng động khác (nếu cần)
-        window.onload = function() {
-            const heart = document.querySelector('.heart');
-            const text = document.getElementById('text');
+    <!-- <script>
+      // Sử dụng JavaScript để thêm các hiệu ứng động khác (nếu cần)
+      window.onload = function () {
+        const heart = document.querySelector(".heart");
+        const text = document.getElementById("text");
 
-            // Tạo một hiệu ứng xuất hiện của chữ sau khi trái tim hoàn thành
-            setTimeout(() => {
-                text.style.animationPlayState = 'running'; // Bắt đầu hiệu ứng chữ
-            }, 1500);
-        }
-    </script>
-
-</body>
+        // Tạo một hiệu ứng xuất hiện của chữ sau khi trái tim hoàn thành
+        setTimeout(() => {
+          text.style.animationPlayState = "running"; // Bắt đầu hiệu ứng chữ
+        }, 1500);
+      };
+    </script> -->
+  </body>
 </html>
